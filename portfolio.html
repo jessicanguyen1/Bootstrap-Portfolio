@@ -13,55 +13,77 @@
 </head>
 
 <body>
-    <!-- #wrapper is 100% width -->
-    <div id="header-wrapper">
-        <!-- #header-section is 960px margin is auto-->
-        <div id="header-section">
-            <!-- header tag is 100% width, floating left -->
-            <header>
-                <!-- .logo is 15% of header tag, floating left -->
-                <div class="logo">
-                    <h1>Jessica Nguyen</h1>
-                </div>
-                <!-- navigation links are 70% width of header tag, floating left-->
-                <div class="navigation-links">
-                    <a href="/index.html">About <span> | </span></a>
-                    <a href="/portfolio.html">Portfolio<span> |</span></a>
-                    <a href="/contact.html">Contact</a>
-                </div>
-            </header>
-        </div>
-    </div>
 
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Jessica Nguyen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content and images -->
     <div id="content-wrapper">
         <h1>Portfolio</h1>
         <hr>
-        <div class="box-wrapper">
-            <!-- box-wrapper contains floating elements so I used clearfix CSS properties to clear floats -->
-            <div class="box-item" style="background: url(http://sites.psu.edu/siowfa15/wp-content/uploads/sites/29639/2015/11/video-games.jpg); background-repeat: no-repeat; background-size: cover; background-position-x: -44px; background-position-y: -31px;">
+        <!--Hangman-->
+        <div class="row">
+            <div class="col-md-4">
+                <img src="http://sites.psu.edu/siowfa15/wp-content/uploads/sites/29639/2015/11/video-games.jpg" class="img-thumbnail"
+                    alt="Hangman">
                 <p>Hangman</p>
             </div>
-            <div class="box-item" style="background: url(https://www.techbooky.com/wp-content/uploads/2018/04/technology-and-us.jpg); background-repeat: no-repeat; background-size: cover; background-position-x: -48px;">
+            <!--RPG Game-->
+            <div class="col-md-4">
+                <img src="https://www.techbooky.com/wp-content/uploads/2018/04/technology-and-us.jpg" class="img-thumbnail"
+                    alt="RPG Game">
                 <p>RPG Game</p>
             </div>
-
-            <div class="box-item" style="background: url(http://2.bp.blogspot.com/-qiAEfXavPTE/VS6wc1Nj4HI/AAAAAAAACiY/GggbH8oE5sU/s1600/contest_winner.jpeg); background-repeat: no-repeat; background-size: cover; background-position-x: -99px;">
+        </div>
+        <!--Trivia Game-->
+        <div class="row">
+            <div class="col-md-4">
+                <img src="http://2.bp.blogspot.com/-qiAEfXavPTE/VS6wc1Nj4HI/AAAAAAAACiY/GggbH8oE5sU/s1600/contest_winner.jpeg"
+                    class="img-thumbnail" alt="Trivia Game">
                 <p>Trivia Game</p>
             </div>
-
-            <div class="box-item" style="background: url(https://developer.android.com/design/media/widgets_resizing01.png); background-repeat: no-repeat; background-size: cover; background-position-x: -32px;">
+            <div class="col-md-4">
+                <img src="https://www.gupshup.io/developer/resources/img/marketecture/webwidget/img-01_new.png" class="img-thumbnail"
+                    alt="Rutgers Info Widget">
                 <p>Rutgers Info Widget</p>
             </div>
-
-            <div class="box-item" style="background: url(http://okinawa.stripes.com/sites/default/files/styles/news_node_for_responsive/public/janken.jpg?itok=NknyesSM); background-repeat: no-repeat; background-size: cover; background-position-x: -80px;
-            background-position-y: -25px;">
+        </div>
+        <!--Rock Paper Scissors-->
+        <div class="row">
+            <div class="col-md-4">
+                <img src="http://okinawa.stripes.com/sites/default/files/styles/news_node_for_responsive/public/janken.jpg?itok=NknyesSM"
+                    class="img-thumbnail" alt="Rock Paper Scissors">
                 <p>Rock Paper Scissors</p>
             </div>
 
         </div>
+
     </div>
 
+
+
     <footer>Copyright &#169;</footer>
+
 </body>
 
 </html>
