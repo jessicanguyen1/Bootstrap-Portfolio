@@ -45,6 +45,11 @@ h1 {
     background: #ffffff; 
 }
 
+.container h1 {
+    color: #4aaaa5;
+    padding: 20px;
+}
+
 header {
     width: 100%;
     margin: 0 auto;
@@ -93,7 +98,7 @@ header .navigation-links a span {
 
 #content-wrapper h1 {
     color: #4aaaa5;
-    padding: 40px 20px;
+    padding: 10px 20px;
 }
 
 #content-wrapper p {
